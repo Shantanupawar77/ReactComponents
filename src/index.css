@@ -1,0 +1,102 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  /* Prevent body scroll */
+}
+
+.parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+  /* Allow parent to scroll if necessary */
+}
+
+.container {
+  width: 500px;
+  max-height: 90vh;
+  /* Max height relative to viewport height */
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  overflow-y: auto;
+  /* Enable vertical scrolling within the container */
+}
+
+.profile-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.info-id h1 {
+  margin: 10px 0;
+  font-size: 24px;
+  color: #333;
+}
+
+.info-id h3 {
+  margin: 5px 0;
+  font-size: 18px;
+  color: #777;
+}
+
+.info-id h6 {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #aaa;
+}
+
+.buttons {
+  margin-top: 10px;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.about,
+.interests,
+.social-media-icons {
+  margin-top: 20px;
+}
+
+.social-media-icons button {
+  background-color: #555;
+}
+
+.social-media-icons button:hover {
+  background-color: #333;
+}
